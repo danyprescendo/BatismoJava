@@ -6,21 +6,20 @@ public class Main {
         // Objeto Ninja não pode ser criado, Ninja é uma classe abstract
 
         // Objeto Uzumaki
-        Uzumaki naruto = new Uzumaki();
-        naruto.nome = "Naruto Uzumaki";
-        naruto.idade = 16;
+        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16, 2, NivelNinja.CHUUNIN);
         naruto.habilidadeEspecial();
-        naruto.estrategiaDeBatalhaNinja();
 
         // Objeto Uchiha
-        Uchiha sasuke = new Uchiha();
-        sasuke.nome = "Sasuke Uchiha";
-        sasuke.aldeia = "Aldeia da Folha";
-        sasuke.idade = 17;
+        Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da Folha", 18, 20, NivelNinja.GENIN);
         sasuke.habilidadeEspecial();
 
         // Obejto Uchiha 2
         Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27);
         itachi.habilidadeEspecial();
+
+        // Obejto Uchiha 3
+        Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Folha", 45, 900, NivelNinja.KAGE);
+        madara.habilidadeEspecial();
+        madara.estrategiaDeBatalhaNinja();
     }
 }
