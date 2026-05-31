@@ -2,9 +2,13 @@ package NiveIntermediario.Polimorfismo;
 
 public abstract class Ninja implements EstrategiaDeBatalha {
 
+    // TODO: incluir 2 novos atributos: numeroDeMissoesConcluidas, Rank
+    // TODO: Rank: Gennin, Chunnin, Jounnin, Hokage
     String nome;
     String aldeia;
     int idade;
+    int numeroDeMissoesConcluidas;
+    String Rank;
 
     public Ninja() {
     }
