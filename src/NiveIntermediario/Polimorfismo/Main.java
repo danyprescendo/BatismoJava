@@ -26,4 +26,9 @@ public class Main {
         // metodo sobrecarregado
         madara.inteligenciaDeCombate(90);
     }
+
+    /*// Metodo sem @Override
+    public void metodoProvisorio() {
+        System.out.println("Teste");
+    }*/
 }
