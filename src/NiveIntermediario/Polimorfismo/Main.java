@@ -21,5 +21,9 @@ public class Main {
         Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Folha", 45, 900, NivelNinja.KAGE);
         madara.habilidadeEspecial();
         madara.estrategiaDeBatalhaNinja();
+        // metodo comum
+        madara.inteligenciaDeCombate();
+        // metodo sobrecarregado
+        madara.inteligenciaDeCombate(90);
     }
 }
