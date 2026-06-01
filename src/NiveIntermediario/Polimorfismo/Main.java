@@ -6,29 +6,14 @@ public class Main {
         // Objeto Ninja não pode ser criado, Ninja é uma classe abstract
 
         // Objeto Uzumaki
+        System.out.println("--------------- Naruto Uzumaki --------------");
         Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16, 2, NivelNinja.CHUUNIN);
-        naruto.habilidadeEspecial();
+        System.out.println(naruto);
 
         // Objeto Uchiha
+        System.out.println("--------------- Sasuke Uchiha --------------");
         Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da Folha", 18, 20, NivelNinja.GENIN);
-        sasuke.habilidadeEspecial();
-
-        // Obejto Uchiha 2
-        Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27);
-        itachi.habilidadeEspecial();
-
-        // Obejto Uchiha 3
-        Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Folha", 45, 900, NivelNinja.KAGE);
-        madara.habilidadeEspecial();
-        madara.estrategiaDeBatalhaNinja();
-        // metodo comum
-        madara.inteligenciaDeCombate();
-        // metodo sobrecarregado
-        madara.inteligenciaDeCombate(90);
+        System.out.println(sasuke);
     }
 
-    /*// Metodo sem @Override
-    public void metodoProvisorio() {
-        System.out.println("Teste");
-    }*/
 }
