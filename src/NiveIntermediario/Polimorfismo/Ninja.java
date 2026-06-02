@@ -10,8 +10,15 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     int idade;
     int numeroDeMissoesConcluidas;
     NivelNinja rank;
+    final double altura = 2.10; // FINAL devem ser inicializados e não podem ser alterados
 
     public Ninja() {
+    }
+
+    // Todos os ninjas vão fazer obrigatoriamente
+    // Metodos FINAL não podem ser sobrescritos
+    final void tacarKunai() {
+        System.out.println("Eu sou um metodo da classe mãe!");
     }
 
     // Metodo existente: Primeiro Metodo

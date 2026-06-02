@@ -9,6 +9,9 @@ public class Main {
         System.out.println("--------------- Naruto Uzumaki --------------");
         Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16, 2, NivelNinja.CHUUNIN);
         System.out.println(naruto);
+        naruto.tacarKunai();
+        // naruto.altura = 1.76 Não pode ser setado por ser um atributo definido como FINAL, que não podem ser alterados
+        System.out.println(naruto.altura);
 
         // Objeto Uchiha
         System.out.println("--------------- Sasuke Uchiha --------------");
