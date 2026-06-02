@@ -9,6 +9,10 @@ public class ContaPoupanca extends ContaBancaria{
         super(numeroConta, titular, saldo);
     }
 
+    public ContaPoupanca(int numeroConta, String titular, double saldo, TipoConta tipoConta) {
+        super(numeroConta, titular, saldo, tipoConta);
+    }
+
     @Override
     public void depositar(double valor) {
         saldo += valor - (valor * 0.01); // Dedução de 1%
@@ -17,7 +21,7 @@ public class ContaPoupanca extends ContaBancaria{
     @Override
     public String toString() {
         return "---------- Conta Poupança ---------\n" +
-                "Conta: " + numeroConta + "\n" +
+                "Nª da Conta: " + numeroConta + "\n" +
                 "Titular: " + titular +  "\n" +
                 "Saldo: " + saldo;
     }

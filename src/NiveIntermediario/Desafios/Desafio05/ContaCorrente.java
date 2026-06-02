@@ -9,6 +9,10 @@ public class ContaCorrente extends ContaBancaria{
         super(numeroConta, titular, saldo);
     }
 
+    public ContaCorrente(int numeroConta, String titular, double saldo, TipoConta tipoConta) {
+        super(numeroConta, titular, saldo, tipoConta);
+    }
+
     @Override
     public void depositar(double valor) {
         saldo += valor;
