@@ -13,7 +13,7 @@ public abstract class ContaBancaria implements Conta {
     public ContaBancaria(int numeroConta, String titular, double saldo) {
         this.numeroConta = numeroConta;
         this.titular = titular;
-        this.saldo = 0;
+        this.saldo = saldo;
     }
 
     public ContaBancaria(int numeroConta, String titular, double saldo, TipoConta tipoConta) {
